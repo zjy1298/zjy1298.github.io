@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="章锦阳（Jinyang Zhang），北京大学计算机学院硕士生，研究大语言模型的数据与模型架构。"
+    />
+    <meta name="theme-color" content="#f7f6f2" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jinyang Zhang | 章锦阳" />
+    <meta
+      property="og:description"
+      content="M.S. student at Peking University. Research interests: data and architectures for large language models."
+    />
+    <title>章锦阳 | Jinyang Zhang</title>
+    <link rel="icon" href="assets/pku-logo.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem("theme");
+        const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        const savedLang = localStorage.getItem("lang");
+        document.documentElement.dataset.theme = savedTheme || preferredTheme;
+        document.documentElement.dataset.lang = savedLang || "zh";
+        document.documentElement.lang = savedLang === "en" ? "en" : "zh-CN";
+      })();
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jinyang Zhang",
+        "alternateName": "章锦阳",
+        "email": "mailto:jinyangzhang25@stu.pku.edu.cn",
+        "affiliation": { "@type": "CollegeOrUniversity", "name": "Peking University" },
+        "knowsAbout": [
+          "Large Language Model Data",
+          "Model Architecture",
+          "Continual Pretraining",
+          "Reasoning Data Synthesis"
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">
+      <span class="lang-zh">跳到正文</span><span class="lang-en">Skip to content</span>
+    </a>
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header">
+      <div class="header-inner shell">
+        <a class="brand" href="#about" aria-label="Jinyang Zhang, home">
+          <img src="assets/pku-logo.png" alt="北京大学校徽" />
+          <span class="brand-copy">
+            <strong>章锦阳</strong>
+            <small>Jinyang Zhang</small>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#about"><span class="lang-zh">简介</span><span class="lang-en">About</span></a>
+          <a href="#education"><span class="lang-zh">教育</span><span class="lang-en">Education</span></a>
+          <a href="#publications"><span class="lang-zh">论文</span><span class="lang-en">Publications</span></a>
+          <a href="#experience"><span class="lang-zh">经历</span><span class="lang-en">Experience</span></a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="language-switch" role="group" aria-label="Language">
+            <button type="button" data-set-lang="zh" aria-pressed="true">中</button>
+            <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+          </div>
+          <button class="theme-toggle" type="button" aria-label="Switch color theme">
+            <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path>
+            </svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.5 14.1A8.3 8.3 0 019.9 3.5a8.3 8.3 0 1010.6 10.6z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero shell" id="about">
+        <div class="hero-kicker reveal">
+          <span class="status-dot"></span>
+          <span class="lang-zh">北京大学计算机学院 · CENTRAi</span>
+          <span class="lang-en">School of Computer Science · Peking University</span>
+        </div>
+        <h1 class="reveal">章锦阳 <span>Jinyang Zhang</span></h1>
+        <div class="intro-grid reveal">
+          <p class="intro-lead lang-zh">
+            你好，我是章锦阳，目前是北京大学计算机学院森智实验室（CENTRAi）的硕士研究生，导师是赵俊峰老师和王亚沙老师。
+          </p>
+          <p class="intro-lead lang-en">
+            Hi, I am Jinyang Zhang, an M.S. student at the CENTRAi Lab, School of Computer Science, Peking University, advised by Prof. Junfeng Zhao and Prof. Yasha Wang.
+          </p>
+          <div class="intro-detail">
+            <p class="lang-zh">
+              在此之前，我在浙江大学获得计算机科学与技术学士学位。我的研究主要关注<strong>大语言模型的数据与模型架构</strong>，包括训练数据合成与筛选、推理数据构造、持续预训练，以及模型结构的高效适配。自 2024 年 10 月起，我在<strong>阿里巴巴通义千问基模预训练团队</strong>参与研究，并从 Qwen3 系列开始参与相关工作。
+            </p>
+            <p class="lang-en">
+              Previously, I received my B.Eng. in Computer Science and Technology from Zhejiang University. My research focuses on <strong>data and model architectures for large language models</strong>, including training data synthesis and selection, reasoning data construction, continual pretraining, and efficient architectural adaptation. Since October 2024, I have worked with the <strong>Foundation Model Pretraining Team at Alibaba Qwen</strong>, contributing from the Qwen3 series onward.
+            </p>
+            <div class="contact-row">
+              <a href="mailto:jinyangzhang25@stu.pku.edu.cn">jinyangzhang25@stu.pku.edu.cn</a>
+              <button class="copy-email" type="button" data-email="jinyangzhang25@stu.pku.edu.cn">
+                <span class="lang-zh">复制邮箱</span><span class="lang-en">Copy email</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell" id="education">
+        <header class="section-heading reveal">
+          <span class="section-label">01</span>
+          <div>
+            <h2><span class="lang-zh">教育经历</span><span class="lang-en">Education</span></h2>
+          </div>
+        </header>
+
+        <div class="education-list">
+          <article class="education-item reveal">
+            <div class="education-mark">
+              <img src="assets/pku-logo.png" alt="北京大学校徽" />
+            </div>
+            <div class="education-main">
+              <h3><span class="lang-zh">北京大学</span><span class="lang-en">Peking University</span></h3>
+              <p><span class="lang-zh">计算机学院，硕士研究生 · 森智实验室（CENTRAi）</span><span class="lang-en">M.S. in Computer Science · CENTRAi Lab</span></p>
+            </div>
+            <time>2025.09 — <span class="lang-zh">至今</span><span class="lang-en">Present</span></time>
+          </article>
+
+          <article class="education-item reveal">
+            <div class="education-mark">
+              <img src="assets/zju-logo.png" alt="浙江大学校徽" />
+            </div>
+            <div class="education-main">
+              <h3><span class="lang-zh">浙江大学</span><span class="lang-en">Zhejiang University</span></h3>
+              <p><span class="lang-zh">计算机科学与技术，本科 · 竺可桢学院工程教育高级班，获工高班荣誉证书</span><span class="lang-en">B.Eng. in Computer Science and Technology · Advanced Engineering Education Program, Chu Kochen Honors College, with Honors Certificate</span></p>
+              <p class="education-note"><span class="lang-zh">总均绩 4.90/5，主修课程均绩 4.97/5，专业排名 1/497。</span><span class="lang-en">Overall GPA 4.90/5, major GPA 4.97/5, ranked 1st among 497 students.</span></p>
+              <p class="education-thanks"><span class="lang-zh">特别感谢林兰芬老师在本科阶段给予我的指导与帮助。</span><span class="lang-en">I am especially grateful to Prof. Lanfen Lin for her guidance and support during my undergraduate study.</span></p>
+            </div>
+            <time>2021.09 — 2025.06</time>
+          </article>
+        </div>
+      </section>
+
+      <section class="section shell" id="publications">
+        <header class="section-heading reveal">
+          <span class="section-label">02</span>
+          <div>
+            <h2><span class="lang-zh">代表性成果</span><span class="lang-en">Selected Work</span></h2>
+            <p><span class="lang-zh">选取几项最能代表当前研究方向的工作。</span><span class="lang-en">A few projects representative of my current research.</span></p>
+          </div>
+        </header>
+
+        <div class="publication-list">
+          <article class="paper reveal">
+            <div class="paper-side"><time>2026</time><span class="highlight-venue">ICML · Spotlight</span></div>
+            <div class="paper-main">
+              <h3><a href="https://icml.cc/virtual/2026/poster/66815" target="_blank" rel="noopener">The Tell-Tale Norm: L2 Magnitude as a Signal for Reasoning <span aria-hidden="true">↗</span></a></h3>
+              <p class="paper-authors"><strong>Jinyang Zhang</strong>, Hongxin Ding, Yue Fang, Weibin Liao, Muyang Ye, Junfeng Zhao, Yasha Wang</p>
+              <p class="role"><span class="lang-zh">第一作者</span><span class="lang-en">First author</span></p>
+              <p class="description lang-zh">从 L2 范数出发研究潜在推理的内生信号，并探索无需训练的推理干预方法。</p>
+              <p class="description lang-en">Studies L2 magnitude as an intrinsic signal of latent reasoning and explores training-free reasoning interventions.</p>
+            </div>
+            <a class="paper-figure" href="https://icml.cc/virtual/2026/poster/66815" target="_blank" rel="noopener" aria-label="Open The Tell-Tale Norm">
+              <img src="assets/papers/tell.webp" alt="The Tell-Tale Norm method overview" loading="lazy" />
+            </a>
+          </article>
+
+          <article class="paper reveal">
+            <div class="paper-side"><time>2026</time><span class="highlight-venue">EMNLP · Main Oral</span></div>
+            <div class="paper-main">
+              <h3><a href="https://arxiv.org/abs/2609.16076" target="_blank" rel="noopener">The Imitation Game: When LLMs Learn to Reason Like Programs via Code-Centric Reasoning Data Synthesis <span aria-hidden="true">↗</span></a></h3>
+              <p class="paper-authors"><strong>Jinyang Zhang</strong>, Weibin Liao, Keqin Bao, Sihang Li, Shaobo Wang, Muyang Ye, Hongxin Ding, Yue Fang, Tianyi Tang, Fei Huang, Kexin Yang, Xingzhang Ren, Dayiheng Liu</p>
+              <p class="role"><span class="lang-zh">第一作者</span><span class="lang-en">First author</span></p>
+              <p class="description lang-zh">利用代码执行的中间状态，构造规模化、可验证的推理训练数据。</p>
+              <p class="description lang-en">Uses intermediate program states to synthesize verifiable reasoning data at scale.</p>
+            </div>
+            <a class="paper-figure" href="https://arxiv.org/abs/2609.16076" target="_blank" rel="noopener" aria-label="Open The Imitation Game">
+              <img src="assets/papers/imitation.webp" alt="The Imitation Game overview" loading="lazy" />
+            </a>
+          </article>
+
+          <article class="paper reveal">
+            <div class="paper-side"><time>2026</time><span>ICLR · Poster</span></div>
+            <div class="paper-main">
+              <h3><a href="https://iclr.cc/virtual/2026/poster/10006801" target="_blank" rel="noopener">ADEPT: Continual Pretraining via Adaptive Expansion and Dynamic Decoupled Tuning <span aria-hidden="true">↗</span></a></h3>
+              <p class="paper-authors"><strong>Jinyang Zhang</strong>, Yue Fang, Hongxin Ding, Weibin Liao, Muyang Ye, Junfeng Zhao, Yasha Wang, Xu Chu</p>
+              <p class="role"><span class="lang-zh">第一作者</span><span class="lang-en">First author</span></p>
+              <p class="description lang-zh">通过选择性层扩展与动态解耦调优，研究高效的领域持续预训练。</p>
+              <p class="description lang-en">Studies efficient domain continual pretraining through selective layer expansion and dynamically decoupled tuning.</p>
+            </div>
+            <a class="paper-figure" href="https://iclr.cc/virtual/2026/poster/10006801" target="_blank" rel="noopener" aria-label="Open ADEPT">
+              <img src="assets/papers/adept.webp" alt="ADEPT framework overview" loading="lazy" />
+            </a>
+          </article>
+
+          <article class="paper reveal">
+            <div class="paper-side"><time>2025</time><span class="highlight-venue">EMNLP · Main Oral</span></div>
+            <div class="paper-main">
+              <h3><a href="https://aclanthology.org/2025.emnlp-main.364/" target="_blank" rel="noopener">NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines <span aria-hidden="true">↗</span></a></h3>
+              <p class="paper-authors"><strong>Jinyang Zhang</strong>, Kexin Yang, Yu Wan, Muyang Ye, Yue Fang, Baosong Yang, Fei Huang, Junyang Lin, Dayiheng Liu</p>
+              <p class="role"><span class="lang-zh">第一作者</span><span class="lang-en">First author</span></p>
+              <p class="description lang-zh">面向 63 个学科构建多语言、全学科原生评测基准。</p>
+              <p class="description lang-en">A native multilingual benchmark spanning 63 academic disciplines.</p>
+            </div>
+            <a class="paper-figure" href="https://aclanthology.org/2025.emnlp-main.364/" target="_blank" rel="noopener" aria-label="Open NOVA-63">
+              <img src="assets/papers/nova.webp" alt="NOVA-63 language and discipline overview" loading="lazy" />
+            </a>
+          </article>
+
+          <article class="paper reveal">
+            <div class="paper-side"><time>2025</time><span>NeurIPS · D&amp;B · Poster</span></div>
+            <div class="paper-main">
+              <h3><a href="https://neurips.cc/virtual/2025/loc/san-diego/poster/121825" target="_blank" rel="noopener">SuperGPQA: Scaling LLM Evaluation across 285 Graduate Disciplines <span aria-hidden="true">↗</span></a></h3>
+              <p class="paper-authors">Xeron Du, Yifan Yao, Kaijing Ma, Bingli Wang, Tianyu Zheng, …, <strong>Jinyang Zhang</strong>, et al.</p>
+              <p class="role"><span class="lang-zh">贡献者</span><span class="lang-en">Contributor</span></p>
+              <p class="description lang-zh">覆盖 285 个研究生学科的大规模专业知识评测基准；参与题目、分类体系与 Benchmark 构建。</p>
+              <p class="description lang-en">A large-scale benchmark spanning 285 graduate disciplines; contributed questions, taxonomy design, and benchmark construction.</p>
+            </div>
+            <a class="paper-figure" href="https://neurips.cc/virtual/2025/loc/san-diego/poster/121825" target="_blank" rel="noopener" aria-label="Open SuperGPQA">
+              <img src="assets/papers/supergpqa.webp" alt="SuperGPQA data collection overview" loading="lazy" />
+            </a>
+          </article>
+
+          <article class="paper reveal">
+            <div class="paper-side"><time>2025</time><span>Technical Report</span></div>
+            <div class="paper-main">
+              <h3><a href="https://arxiv.org/abs/2505.09388" target="_blank" rel="noopener">Qwen3 Technical Report <span aria-hidden="true">↗</span></a></h3>
+              <p class="paper-authors">Qwen Team</p>
+              <p class="role"><span class="lang-zh">贡献者</span><span class="lang-en">Contributor</span></p>
+              <p class="description lang-zh">参与题库标签设计、思维链与非常规推理数据合成、长尾知识数据增强及 Agent 轨迹合成。</p>
+              <p class="description lang-en">Contributed to taxonomy design, chain-of-thought and unconventional reasoning synthesis, long-tail knowledge augmentation, and agent trajectory synthesis.</p>
+            </div>
+            <a class="paper-figure" href="https://arxiv.org/abs/2505.09388" target="_blank" rel="noopener" aria-label="Open Qwen3 Technical Report">
+              <img src="assets/papers/qwen3.webp" alt="Qwen3 post-training pipeline" loading="lazy" />
+            </a>
+          </article>
+
+        </div>
+
+        <div class="all-publications reveal">
+          <div class="subsection-heading">
+            <div>
+              <h3><span class="lang-zh">全部论文</span><span class="lang-en">All Publications</span></h3>
+              <p><span class="lang-zh">按时间倒序排列；作者列表中我的姓名以粗体标出。</span><span class="lang-en">Reverse chronological order; my name is shown in bold.</span></p>
+            </div>
+            <span class="scroll-hint"><span class="lang-zh">滚动查看</span><span class="lang-en">Scroll</span> ↕</span>
+          </div>
+
+          <div class="publication-scroll" tabindex="0" aria-label="All publications">
+            <article class="publication-entry">
+              <div class="publication-meta"><time>2026</time><span class="highlight-venue">EMNLP · Main Oral</span></div>
+              <div>
+                <h4><a href="https://arxiv.org/abs/2609.16076" target="_blank" rel="noopener">The Imitation Game: When LLMs Learn to Reason Like Programs via Code-Centric Reasoning Data Synthesis ↗</a></h4>
+                <p><strong>Jinyang Zhang</strong>, Weibin Liao, Keqin Bao, Sihang Li, Shaobo Wang, Muyang Ye, Hongxin Ding, Yue Fang, Tianyi Tang, Fei Huang, Kexin Yang, Xingzhang Ren, Dayiheng Liu</p>
+              </div>
+            </article>
+
+            <article class="publication-entry">
+              <div class="publication-meta"><time>2026</time><span class="highlight-venue">ICML · Spotlight</span></div>
+              <div>
+                <h4><a href="https://icml.cc/virtual/2026/poster/66815" target="_blank" rel="noopener">The Tell-Tale Norm: L2 Magnitude as a Signal for Reasoning ↗</a></h4>
+                <p><strong>Jinyang Zhang</strong>, Hongxin Ding, Yue Fang, Weibin Liao, Muyang Ye, Junfeng Zhao, Yasha Wang</p>
+              </div>
+            </article>
+
+            <article class="publication-entry">
+              <div class="publication-meta"><time>2026</time><span>ACL · Main · Poster</span></div>
+              <div>
+                <h4><a href="https://aclanthology.org/2026.acl-long.1500/" target="_blank" rel="noopener">ProMed: Shapley Information Gain Guided Reinforcement Learning for Proactive Medical LLMs ↗</a></h4>
+                <p>Hongxin Ding, Baixiang Huang, Yue Fang, Weibin Liao, Xinke Jiang, <strong>Jinyang Zhang</strong>, Yinghao Zhu, Zheng Li, Liantao Ma, Junfeng Zhao, Yasha Wang</p>
+              </div>
+            </article>
+
+            <article class="publication-entry">
+              <div class="publication-meta"><time>2026</time><span>ACL · Findings · Poster</span></div>
+              <div>
+                <h4><a href="https://aclanthology.org/2026.findings-acl.1880/" target="_blank" rel="noopener">HSS-Synth: Humanities and Social Sciences Data Synthesis for LLMs ↗</a></h4>
+                <p>Ru Peng, Tianyu Zhao, Xijun Gu, Zhiting Fan, Haokai Xu, <strong>Jinyang Zhang</strong>, Yawen Zeng, Yihong Zhuang, Kexin Yang, Junyang Lin, Dayiheng Liu, Junbo Zhao</p>
+              </div>
+            </article>
+
+            <article class="publication-entry">
+              <div class="publication-meta"><time>2026</time><span>SCIS · CCF-A</span></div>
+              <div>
+                <h4><a href="https://www.sciengine.com/doi/10.1007/s11432-025-4980-9" target="_blank" rel="noopener">DataXman: Selecting and Mixing Pretraining Data via Bilingual Mixture-of-Experts Data Manager ↗</a></h4>
+                <p>Ru Peng, <strong>Jinyang Zhang</strong>, Yawen Zeng, Kexin Yang, Junyang Lin, Haobo Wang, Gang Chen, Jinren Zhou, Dayiheng Liu, Junbo Zhao</p>
+              </div>
+            </article>
+
+            <article class="publication-entry">
+              <div class="publication-meta"><time>2026</time><span>ICLR · Poster</span></div>
+              <div>
+                <h4><a href="https://iclr.cc/virtual/2026/poster/10006801" target="_blank" rel="noopener">ADEPT: Continual Pretraining via Adaptive Expansion and Dynamic Decoupled Tuning ↗</a></h4>
+                <p><strong>Jinyang Zhang</strong>, Yue Fang, Hongxin Ding, Weibin Liao, Muyang Ye, Junfeng Zhao, Yasha Wang, Xu Chu</p>
+              </div>
+            </article>
+
+            <article class="publication-entry">
+              <div class="publication-meta"><time>2025</time><span>NeurIPS · D&amp;B · Poster</span></div>
+              <div>
+                <h4><a href="https://neurips.cc/virtual/2025/loc/san-diego/poster/121825" target="_blank" rel="noopener">SuperGPQA: Scaling LLM Evaluation across 285 Graduate Disciplines ↗</a></h4>
+                <p>Xeron Du, Yifan Yao, Kaijing Ma, Bingli Wang, Tianyu Zheng, …, <strong>Jinyang Zhang</strong>, et al.</p>
+              </div>
+            </article>
+
+            <article class="publication-entry">
+              <div class="publication-meta"><time>2025</time><span class="highlight-venue">EMNLP · Main Oral</span></div>
+              <div>
+                <h4><a href="https://aclanthology.org/2025.emnlp-main.364/" target="_blank" rel="noopener">NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines ↗</a></h4>
+                <p><strong>Jinyang Zhang</strong>, Kexin Yang, Yu Wan, Muyang Ye, Yue Fang, Baosong Yang, Fei Huang, Junyang Lin, Dayiheng Liu</p>
+              </div>
+            </article>
+
+            <article class="publication-entry">
+              <div class="publication-meta"><time>2025</time><span>EMNLP · Poster</span></div>
+              <div>
+                <h4><a href="https://aclanthology.org/2025.emnlp-main.983/" target="_blank" rel="noopener">3DS: Medical Domain Adaptation of LLMs via Decomposed Difficulty-based Data Selection ↗</a></h4>
+                <p>Hongxin Ding, Yue Fang, Runchuan Zhu, Xinke Jiang, <strong>Jinyang Zhang</strong>, Yongxin Xu, Weibin Liao, Xu Chu, Junfeng Zhao, Yasha Wang</p>
+              </div>
+            </article>
+
+            <article class="publication-entry">
+              <div class="publication-meta"><time>2025</time><span>Technical Report</span></div>
+              <div>
+                <h4><a href="https://arxiv.org/abs/2505.09388" target="_blank" rel="noopener">Qwen3 Technical Report ↗</a></h4>
+                <p>Qwen Team · <span class="lang-zh">贡献者：</span><span class="lang-en">Contributor:</span> <strong>Jinyang Zhang</strong></p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell" id="experience">
+        <header class="section-heading reveal">
+          <span class="section-label">03</span>
+          <div><h2><span class="lang-zh">研究与实习经历</span><span class="lang-en">Research Experience</span></h2></div>
+        </header>
+
+        <div class="experience-list">
+          <article class="experience-item reveal">
+            <div class="experience-date">2024.10 — <span class="lang-zh">至今</span><span class="lang-en">Present</span></div>
+            <div>
+              <h3><span class="lang-zh">阿里巴巴通义千问</span><span class="lang-en">Alibaba Qwen</span></h3>
+              <p class="experience-role"><span class="lang-zh">通用基座模型预训练 · 研究型实习生 · 从 Qwen3 系列开始参与</span><span class="lang-en">Foundation Model Pretraining · Research Intern · Contributing since the Qwen3 series</span></p>
+              <ul class="lang-zh">
+                <li>参与考试题库标签设计、思维链数据合成，以及长尾细粒度知识的召回与增强。</li>
+                <li>参与持续预训练和后训练阶段的推理数据合成，以及 Coworker Agent 轨迹合成。</li>
+                <li>Qwen3 Technical Report 及 Qwen3.X 系列贡献者。</li>
+              </ul>
+              <ul class="lang-en">
+                <li>Worked on exam-data taxonomy, chain-of-thought synthesis, and retrieval and augmentation of long-tail knowledge.</li>
+                <li>Contributed to reasoning data for continual pretraining and post-training, as well as coworker-agent trajectory synthesis.</li>
+                <li>Contributor to the Qwen3 Technical Report and Qwen3.X series.</li>
+              </ul>
+              <a class="text-link" href="https://arxiv.org/abs/2505.09388" target="_blank" rel="noopener">Qwen3 Technical Report ↗</a>
+            </div>
+          </article>
+
+          <article class="experience-item reveal">
+            <div class="experience-date"><span class="lang-zh">项目应用</span><span class="lang-en">Application</span></div>
+            <div>
+              <h3><a href="https://xiaobeihealth.pku.edu.cn" target="_blank" rel="noopener"><span class="lang-zh">小北健康</span><span class="lang-en">Xiaobei Health</span> ↗</a></h3>
+              <p class="experience-role"><span class="lang-zh">北京大学中文医疗大模型</span><span class="lang-en">Chinese medical language model developed at Peking University</span></p>
+              <p class="experience-description"><span class="lang-zh">将 ADEPT 持续预训练技术应用于医疗领域模型。</span><span class="lang-en">Applied ADEPT continual-pretraining techniques to a medical-domain model.</span></p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section shell" id="honors">
+        <header class="section-heading reveal">
+          <span class="section-label">04</span>
+          <div><h2><span class="lang-zh">部分荣誉</span><span class="lang-en">Selected Honors</span></h2></div>
+        </header>
+        <div class="honor-list reveal">
+          <div><time>2025—2026</time><p><span class="lang-zh">北京大学研究生国家奖学金</span><span class="lang-en">National Graduate Scholarship, Peking University</span></p></div>
+          <div><time>2024</time><p><span class="lang-zh">商汤奖学金</span><span class="lang-en">SenseTime Scholarship</span></p></div>
+          <div><time>2021—2023</time><p><span class="lang-zh">本科生国家奖学金（两次）</span><span class="lang-en">National Scholarship for Undergraduate Students (twice)</span></p></div>
+          <div><time>ZJU</time><p><span class="lang-zh">浙江大学一等奖学金、郭以连教育奖学金、何志均教育基金学生奖学金</span><span class="lang-en">Zhejiang University First-Class Scholarship, Guo Yilian Scholarship, and He Zhijun Scholarship</span></p></div>
+        </div>
+      </section>
+
+      <section class="contact-section shell reveal">
+        <p><span class="lang-zh">如希望交流研究或合作，欢迎邮件联系。</span><span class="lang-en">For research discussions or collaboration, feel free to get in touch.</span></p>
+        <a href="mailto:jinyangzhang25@stu.pku.edu.cn">jinyangzhang25@stu.pku.edu.cn</a>
+      </section>
+    </main>
+
+    <footer class="site-footer shell">
+      <p>© 2026 Jinyang Zhang</p>
+      <p><span class="lang-zh">最后更新于 2026 年 9 月</span><span class="lang-en">Last updated September 2026</span></p>
+      <a href="#about"><span class="lang-zh">回到顶部</span><span class="lang-en">Back to top</span> ↑</a>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite">
+      <span class="lang-zh">邮箱已复制</span><span class="lang-en">Email copied</span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
